@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", 
+    "module": "NodeNext", // 不是舊的 "ES2020" 或 "CommonJS"
+    "moduleResolution": "NodeNext", // 這個設定很重要，確保 ESM 正常工作
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

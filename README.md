@@ -1,6 +1,6 @@
 註：這個 repo 所有的檔案，包含這篇 README，都是使用 Claude 建立的，  
 旨在讓我自己快速上手 TypeScript 與 ESM 在 Node.js 上的設定，  
-所以文本都沒有經過修感，如有需要歡迎自行 clone。
+所以文本都沒有經過修改，如有需要歡迎自行 clone。
 
 # Express TypeScript ESM 專案模板
 

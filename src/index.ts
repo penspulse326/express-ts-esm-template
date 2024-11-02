@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT! || 3000;
 
 type HomeResponse = {
   message: string;
@@ -15,5 +15,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server is running at http://localhost:${port}`);
 });

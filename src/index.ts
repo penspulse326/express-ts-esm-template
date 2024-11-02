@@ -1,4 +1,4 @@
-import express from "express";
+import express from 'express';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -7,9 +7,9 @@ type HomeResponse = {
   message: string;
 };
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   const helloMessage: HomeResponse = {
-    message: "Hello Express!",
+    message: 'Hello Express!',
   };
   res.json(helloMessage);
 });

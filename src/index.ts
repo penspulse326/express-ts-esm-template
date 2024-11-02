@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT! || 3000;
 
 // ES Module 中 __dirname 的替代方案
 const __filename = fileURLToPath(import.meta.url);
@@ -30,5 +30,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server is running at http://localhost:${port}`);
 });

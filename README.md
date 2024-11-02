@@ -29,7 +29,7 @@ cd express-ts-esm-starter
 2. 安裝依賴套件：
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. 複製環境變數範本：
@@ -41,19 +41,19 @@ cp .env.example .env
 4. 啟動開發伺服器：
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 5. 建構生產版本：
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 6. 啟動生產伺服器：
 
 ```bash
-npm start
+pnpm start
 ```
 
 ## 專案結構
@@ -73,9 +73,9 @@ npm start
 
 ## 可用腳本
 
-- `npm run dev` - 啟動開發伺服器（支援熱重載）
-- `npm run build` - 建構生產版本
-- `npm start` - 啟動生產伺服器
+- `pnpm run dev` - 啟動開發伺服器（支援熱重載）
+- `pnpm run build` - 建構生產版本
+- `pnpm start` - 啟動生產伺服器
 
 ## 環境變數
 

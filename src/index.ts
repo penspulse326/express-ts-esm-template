@@ -1,4 +1,5 @@
 import express from 'express';
+import testRouter from './routes/test.js';
 
 const app = express();
 const port = process.env.PORT! || 3000;
@@ -13,6 +14,8 @@ app.get('/', (req, res) => {
   };
   res.json(helloMessage);
 });
+
+app.use('/api', testRouter);
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console

@@ -1,14 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ESNext", 
-    "module": "NodeNext", // 不是舊的 "ES2020" 或 "CommonJS"
-    "moduleResolution": "NodeNext", // 這個設定很重要，確保 ESM 正常工作
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "resolveJsonModule": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

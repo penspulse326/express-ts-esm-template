@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "tsx watch src/app.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "lint": "eslint \"src/**/*.ts\"",
@@ -23,9 +23,9 @@
     "@typescript-eslint/parser": "^8.12.2",
     "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
-    "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.12.2"
   }

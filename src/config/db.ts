@@ -35,9 +35,12 @@ class DatabaseService {
 
     try {
       client = await this.pool.connect();
+
+      // eslint-disable-next-line no-console
       console.log('Successfully connected to PostgreSQL');
       return true;
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Error connecting to PostgreSQL:', error);
       return false;
     } finally {

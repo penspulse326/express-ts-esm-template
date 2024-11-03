@@ -1,19 +1,13 @@
-import { Router, Request, Response, NextFunction } from 'express';
-import { dbService } from '../config/db.js';
 import pg from 'pg';
+import { Router, Request, Response } from 'express';
+import { dbService } from '../config/db.js';
+import { asyncHandler } from '../middlewares/asyncHander.js';
 
 interface TimeStampResult {
   now: Date;
 }
 
 const router: Router = Router();
-
-// 用來包裝 async handler 的工具函數
-const asyncHandler = (fn: (req: Request, res: Response, next: NextFunction) => Promise<void>) => {
-  return (req: Request, res: Response, next: NextFunction): void => {
-    fn(req, res, next).catch(next);
-  };
-};
 
 // 測試連線
 router.get(

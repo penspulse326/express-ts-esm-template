@@ -14,10 +14,12 @@ router.get(
   '/test-db',
   asyncHandler(async (req: Request, res: Response): Promise<void> => {
     const isConnected = await dbService.testConnection();
+
     if (isConnected === true) {
       res.json({ message: 'Successfully connected to database' });
       return;
     }
+
     res.status(500).json({ message: 'Failed to connect to database' });
   }),
 );
@@ -34,8 +36,10 @@ router.get(
         message: 'Query executed successfully',
         timestamp: result.rows[0].now,
       });
+
       return;
     }
+
     throw new Error('No result returned from query');
   }),
 );

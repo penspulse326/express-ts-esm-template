@@ -17,7 +17,7 @@ const envSchema = z.object({
   CORS_ORIGIN: z.string().default('http://localhost:3000'),
 
   // Database
-  POSTGRES_HOST: z.string().default('localhost'),
+  POSTGRES_HOST: z.string().default('db'), // 改為 'db'，這樣在 Docker 中會更方便
   POSTGRES_PORT: z.string().default('5432'),
   POSTGRES_DB: z.string().default('myapp_db'),
   POSTGRES_USER: z.string().default('admin'),
